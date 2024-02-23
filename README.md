@@ -114,7 +114,8 @@ zitadel start-from-init   --config defaults.yaml  --masterkey "MasterkeyNeedsToH
 
 #  Postgres Database commands
 
-## change database
+## Change database
+
 ```
 \c zitadel
 ```
@@ -124,7 +125,7 @@ zitadel start-from-init   --config defaults.yaml  --masterkey "MasterkeyNeedsToH
 \dt projections.* (show all table in Projections schema)
 \dt projections.users8_humans ( shows just the schema and table 'users8_humans')
 ```
-## show data in all collumns
+## Show data in all collumns
 ```
 SELECT * FROM projections.users8_humans;
 ```
