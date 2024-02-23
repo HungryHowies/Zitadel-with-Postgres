@@ -13,7 +13,7 @@ Installing the Latest PostgreSQL (current 16.2.1) and configurations needed.
 ## Update System Packages
 
 ```
-apt update && sudo apt upgrade -y
+apt update &&  apt upgrade -y
 ```
 
 ## Repository  
