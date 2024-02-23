@@ -44,6 +44,16 @@ apt  update
 ```
 apt -y install postgresql
 ```
+## Check Verion
+
+```
+psql --version
+```
+```
+root@zitadel:/home/ubuntu# psql --version
+psql (PostgreSQL) 16.2 (Ubuntu 16.2-1.pgdg22.04+1)
+root@zitadel:/home/ubuntu#
+```
 
 ## Check Status 
 
