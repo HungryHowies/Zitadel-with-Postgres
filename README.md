@@ -1,6 +1,25 @@
 # Zitadel-with-Postgres
 
-How to install Latest postgres
+Installing the Latest PostgreSQL (current 16.2.1) and configurations needed.
+
+## Prerequisite:
+
+ * Ubuntu 22.0.4   4 CPU and 4 GB RAM
+ * CockroachDB Version 23.x.x completed
+ * Nginx setup and working.
+ * apt update && apt upgrade
+ * timedatectl set-timezone America/Chicago
+ * apt install net-tools
+ * apt install mlocate
+ * apt install make
+ * network configurations (static IP Address & DNS)
+ * Certificates are completed.
+
+Update System Packages
+
+```
+apt update && sudo apt upgrade -y
+```
 
 ## Repository  
 
@@ -8,13 +27,13 @@ How to install Latest postgres
 sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 ```
 
-## Get Apt Key
+## Import the repository signing key:
 
 ```
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
 ```
 
-## Update Repo
+## Update package list
 
 ```
 apt  update
