@@ -4,18 +4,13 @@ Installing the Latest PostgreSQL (current 16.2.1) and configurations needed.
 
 ## Prerequisite:
 
- * Ubuntu 22.0.4   4 CPU and 4 GB RAM
- * CockroachDB Version 23.x.x completed
- * Nginx setup and working.
- * apt update && apt upgrade
- * timedatectl set-timezone America/Chicago
- * apt install net-tools
- * apt install mlocate
- * apt install make
+ * Ubuntu 22.0.4   4 CPU and 4 GB RAM 
+ * Nginx setup and working. 
+ * timedatectl set-timezone America/Chicago 
  * network configurations (static IP Address & DNS)
  * Certificates are completed.
 
-Update System Packages
+## Update System Packages
 
 ```
 apt update && sudo apt upgrade -y
