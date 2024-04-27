@@ -1,6 +1,6 @@
 # Zitadel-with-Postgres
 
-Installing the Latest PostgreSQL (current 16.2.1) and configurations needed.
+Installing the Latest PostgreSQL (current 16.2.1) and configurations needed. This Documentation  is a basic demo on  using Postgres with Zitadel Self-hosting.
 
 ## Prerequisite:
 
@@ -72,6 +72,8 @@ GRANT CONNECT, CREATE ON DATABASE zitadel TO zitadel;
 
 ## Zitadel Database configuration
 
+This is part of the configurtins need the rest is not shown.
+
 ```
 Database:
   postgres:
@@ -109,10 +111,15 @@ psql --username zitadel --password --host localhost zitadel
 ## Start-Init Zitadel Instance
 
 ```
-zitadel start-from-init   --config defaults.yaml  --masterkey "MasterkeyNeedsToHave32Characters"  --tlsMode external
+zitadel start-from-init   --config defaults.yaml --steps steps.yaml --masterkey "MasterkeyNeedsToHave32Characters"  --tlsMode external
 ```
 
 #  Postgres Database commands
+
+## Shell
+```
+sudo -u postgres psql
+```
 
 ## Change database
 
