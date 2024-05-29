@@ -68,8 +68,14 @@ sudo -u postgres psql
 CREATE ROLE zitadel LOGIN;
 CREATE DATABASE zitadel;
 GRANT CONNECT, CREATE ON DATABASE zitadel TO zitadel;
+ALTER USER zitadel PASSWORD 'zitadel';
 ```
 
+edit file pg_hba.conf and add statement
+
+```
+local   all             postgres                                   trust
+```
 ## Zitadel Database configuration
 
 This is part of the configurtins need the rest is not shown.
