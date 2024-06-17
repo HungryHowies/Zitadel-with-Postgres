@@ -69,6 +69,7 @@ CREATE ROLE zitadel LOGIN;
 CREATE DATABASE zitadel;
 GRANT CONNECT, CREATE ON DATABASE zitadel TO zitadel;
 ALTER USER zitadel PASSWORD 'zitadel';
+ALTER USER postgres PASSWORD 'postgres';
 ```
 
 edit file pg_hba.conf and add statement
